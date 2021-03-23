@@ -9,10 +9,24 @@ String promptText(String promptText) {
 
 double promptDouble() {
   print('Enter a number: ');
-  double num1 = double.parse(stdin.readLineSync());
-  return num1;
+  double myNumber = double.parse(stdin.readLineSync());
+  return myNumber;
 }
 
 void main() {
-  
+  double num1 = promptDouble();
+  double num2 = promptDouble();
+  String operation = promptText('Enter an operation(+, -, /, *): ');
+
+  if (operation == '+') {
+    print(num1 + num2);
+  } else if (operation == '-') {
+    print(num1 - num2);
+  } else if (operation == '/') {
+    print(num1 / num2);
+  } else if (operation == '*') {
+    print(num1 * num2);
+  } else {
+    print('That is not a valid operator.');
+  }
 }
