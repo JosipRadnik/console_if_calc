@@ -1,4 +1,4 @@
-A simple calculator which implements an 'if statement'.
+A simple calculator which implements an 'if' statement.
 
 This app doesn't work on VSC terminal. Error: "Global evaluation requires a thread to have been loaded.".
 
